@@ -1,70 +1,95 @@
-body{
+*{
 margin:0;
-font-family:Arial;
-background:black;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0a0a0a;
 color:white;
-overflow-x:hidden;
 }
 
-canvas{
-position:fixed;
-top:0;
-left:0;
-z-index:-1;
-}
-
-nav{
+.navbar{
 display:flex;
 justify-content:space-between;
-padding:20px 50px;
-background:rgba(0,0,0,0.6);
+padding:20px 80px;
+background:#111;
+position:sticky;
+top:0;
 }
 
-nav ul{
-list-style:none;
+.logo{
+color:#00f7ff;
+}
+
+.nav-links{
 display:flex;
-gap:20px;
+list-style:none;
+gap:30px;
 }
 
-nav a{
+.nav-links a{
 color:white;
 text-decoration:none;
 }
 
-header{
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:150px 20px;
 }
 
-h1{
-font-size:60px;
+.hero span{
+color:#00f7ff;
 }
 
-.glow{
-color:#00ffff;
-text-shadow:0 0 20px cyan;
+.hero p{
+margin:20px 0;
+color:#aaa;
 }
 
-section{
-max-width:900px;
-margin:auto;
-padding:60px 20px;
-}
-
-.card{
-background:rgba(255,255,255,0.05);
-padding:20px;
-margin-top:20px;
-border-radius:15px;
+.btn{
+padding:10px 25px;
+border:2px solid #00f7ff;
+border-radius:25px;
+color:white;
+text-decoration:none;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px cyan;
+.btn:hover{
+background:#00f7ff;
+color:black;
+box-shadow:0 0 20px #00f7ff;
 }
 
-.project-img{
+section{
+padding:80px 120px;
+}
+
+.projects-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.project-card{
+background:#111;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px rgba(0,255,255,0.4);
+}
+
+.project-card img{
 width:100%;
 border-radius:10px;
 margin-bottom:10px;
@@ -72,39 +97,15 @@ margin-bottom:10px;
 
 .skills span{
 display:inline-block;
-margin:8px;
-padding:10px 15px;
 background:#111;
-border:1px solid cyan;
-border-radius:10px;
-animation:float 3s infinite ease-in-out;
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-border:2px solid cyan;
-border-radius:30px;
-text-decoration:none;
-color:white;
-transition:0.3s;
-}
-
-.btn:hover{
-background:cyan;
-color:black;
-box-shadow:0 0 20px cyan;
+padding:10px 15px;
+margin:8px;
+border-radius:8px;
+border:1px solid #00f7ff;
 }
 
 footer{
 text-align:center;
 padding:40px;
 background:#111;
-}
-
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-6px)}
-100%{transform:translateY(0)}
 }
