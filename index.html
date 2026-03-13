@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Shubhra Gohil | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- GSAP animation -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<canvas id="stars"></canvas>
+<nav class="navbar">
 
-<nav>
-<h2>Shubhra Gohil</h2>
+<h2 class="logo">Shubhra Gohil</h2>
 
-<ul>
+<ul class="nav-links">
 <li><a href="#about">About</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#skills">Skills</a></li>
@@ -27,15 +27,25 @@
 
 </nav>
 
-<header>
 
-<h1 class="glow">Shubhra Gohil</h1>
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Hi, I'm <span>Shubhra Gohil</span></h1>
 
 <h2 class="typing"></h2>
 
+<p>
+I am a Computer Science student passionate about building real-world software projects using Python and modern web technologies. I enjoy exploring cloud technologies to understand how applications are deployed and scaled, and I regularly practice Data Structures and Algorithms to strengthen my problem-solving skills. I believe in learning by building projects and continuously improving as a developer.
+
+</p>
+
 <a href="#projects" class="btn">View Projects</a>
 
-</header>
+</div>
+
+</section>
 
 
 <section id="about">
@@ -43,9 +53,7 @@
 <h2>About Me</h2>
 
 <p>
-I am a Computer Science student passionate about building real-world software projects using modern web technologies. I enjoy exploring cloud technologies to understand how applications are deployed and scaled,
-  and I regularly practice Data Structures and Algorithms to strengthen my problem-solving skills.
-  I believe in learning by building projects and continuously improving as a developer.
+I am a Computer Science student passionate about building real-world software projects using Python and modern web technologies. I enjoy exploring cloud technologies to understand how applications are deployed and scaled, and I regularly practice Data Structures and Algorithms to strengthen my problem-solving skills. I believe in learning by building projects and continuously improving as a developer.
 
 </p>
 
@@ -56,32 +64,38 @@ I am a Computer Science student passionate about building real-world software pr
 
 <h2>Projects</h2>
 
-<div class="card">
+<div class="projects-container">
 
-<img src="images/project1.png" class="project-img">
+<div class="project-card">
+
+<img src="images/project1.png">
 
 <h3>Gesture Controlled Maze Game</h3>
 
 <p>
-Maze game controlled using hand gestures with OpenCV and MediaPipe.
+Control a maze game using hand gestures
+with OpenCV and MediaPipe.
 </p>
 
-<a class="btn" href="#">GitHub</a>
+
 
 </div>
 
 
-<div class="card">
+<div class="project-card">
 
-<img src="images/project2.png" class="project-img">
+<img src="images/project2.png">
 
 <h3>LegaLease</h3>
 
 <p>
-Legal Documents simplifier.
+Legalease is a project designed to simplify complex legal documents into clear and easy-to-understand language. It helps users quickly grasp the meaning of legal terms and clauses, making legal information more accessible to everyone.
+
 </p>
 
-<a class="btn" href="#">GitHub</a>
+
+
+</div>
 
 </div>
 
@@ -97,16 +111,13 @@ Legal Documents simplifier.
 <span>Python</span>
 <span>Django</span>
 <span>Flask</span>
-<span>OpenCV</span>
 <span>Java</span>
+<span>OpenCV</span>
 <span>Data Structures</span>
 
 </div>
 
 </section>
-
-
-
 
 
 <section id="contact">
@@ -129,5 +140,4 @@ Legal Documents simplifier.
 <script src="script.js"></script>
 
 </body>
-
 </html>
